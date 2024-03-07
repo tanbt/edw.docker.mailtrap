@@ -11,10 +11,10 @@ ENV MT_PASSWD mailtrap
 ENV MT_MAILBOX_LIMIT 51200000
 ENV MT_MESSAGE_LIMIT 10240000
 
-RUN apt-get update && apt-get install -q -y \
+RUN apt update && apt install -q -y \
     postfix \
     dovecot-imapd \
-    sqlite \
+    sqlite3 \
     php \
     php-mbstring \
     php-sqlite3 \
